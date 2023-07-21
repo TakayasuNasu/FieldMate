@@ -2,7 +2,7 @@
 //  FieldMateApp.swift
 //  FieldMate
 //
-//  Created by Takayasu Nasu on 2021/03/31.
+//  Created by Takayasu Nasu on 2023-07-20.
 //
 
 import SwiftUI

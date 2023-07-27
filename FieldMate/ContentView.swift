@@ -112,14 +112,21 @@ struct MyTabView: View {
         Text("Tab Label 1").tag(1)
       }
       
-      Text("Tab Content 2").tabItem {
-        Text("Tab Label 2").tag(2)
-      }
+      StuckView()
+        .tabItem {
+          Image(systemName: "cloud.sun")
+          Text("Wether")
+        }
+        .tag(2)
       
-      Text("Tab Content 3").tabItem {
-        Text("Tab Label 4").tag(3)
-      }
+      ShowExternalImages()
+        .tabItem {
+          Image(systemName: "house")
+          Text("Home")
+        }
+        .tag(3)
     }
+    .font(.largeTitle)
 
   }
 }

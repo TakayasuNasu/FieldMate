@@ -52,6 +52,70 @@ struct Home: View {
 
         Spacer()
 
+        HStack {
+
+          Spacer()
+
+          VStack {
+
+            Button(action: {
+
+            }) {
+
+              Image("pic")
+                .resizable()
+                .frame(width: 55, height: 55)
+                .clipShape(Circle())
+            }
+
+            Button(action: {
+
+            }) {
+
+              VStack(spacing: 0) {
+
+                Image(systemName: "suit.heart.fill")
+                  .font(.title)
+                  .foregroundColor(.white)
+
+                Text("22K")
+                  .foregroundColor(.white)
+              }
+            }
+
+            Button(action: {
+
+            }) {
+
+              VStack(spacing: 0) {
+
+                Image(systemName: "message.fill")
+                  .font(.title)
+                  .foregroundColor(.white)
+
+                Text("1021")
+                  .foregroundColor(.white)
+              }
+            }
+
+            Button(action: {
+
+            }) {
+
+              VStack(spacing: 0) {
+
+                Image(systemName: "arrowshape.turn.up.right.fill")
+                  .font(.title)
+                  .foregroundColor(.white)
+
+                Text("Share")
+                  .foregroundColor(.white)
+              }
+            }
+          }
+        }
+
+
         HStack(spacing: 0) {
 
           Button(action: {

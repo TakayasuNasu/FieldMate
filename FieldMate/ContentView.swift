@@ -56,7 +56,7 @@ struct Home: View {
 
           Spacer()
 
-          VStack {
+          VStack(spacing: 35) {
 
             Button(action: {
 

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
   var body: some View {
@@ -190,6 +191,35 @@ struct Home: View {
     }
     .background(Color.black.edgesIgnoringSafeArea(.all))
   }
+}
+
+struct PlayerView: View {
+
+  var body: some View {
+
+
+    VStack(spacing: 0) {
+
+    }
+
+  }
+
+}
+
+class Host : UIHostingController<ContentView> {
+
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+
+    return .lightContent
+
+  }
+}
+
+struct Video : Identifiable {
+
+    var id : Int
+    var player : AVPlayer
+    var replay : Bool
 }
 
 struct SubView: View {
